@@ -1,10 +1,11 @@
 {
-  "name": "juni-eslint-config",
+  "name": "juni-linting-config",
   "version": "1.0.0",
   "description": "NPM package for shared ESLint config used at JuniLearning.",
   "main": "index.js",
   "scripts": {
-    "test": "./test.sh"
+    "test": "./test.sh",
+    "publish": "npx np --no-tests"
   },
   "repository": {
     "type": "git",
