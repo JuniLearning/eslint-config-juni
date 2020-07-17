@@ -1,6 +1,6 @@
 {
   "name": "juni-linting-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NPM package for shared ESLint config used at JuniLearning.",
   "main": "index.js",
   "scripts": {
