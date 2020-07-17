@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "eslint-config-airbnb",
+    "eslint-config-prettier",
+    "eslint-plugin-prettier",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
