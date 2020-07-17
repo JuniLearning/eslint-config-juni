@@ -1,0 +1,19 @@
+{
+  "name": "juni-eslint-config",
+  "version": "1.0.0",
+  "description": "NPM package for shared ESLint config used at JuniLearning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuniLearning/juni-eslint-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuniLearning/juni-eslint-config/issues"
+  },
+  "homepage": "https://github.com/JuniLearning/juni-eslint-config#readme"
+}
