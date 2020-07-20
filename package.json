@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-juni",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NPM package for shared ESLint config used at JuniLearning.",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "prettier": "^2.0.5"
   },
   "peerDependencies": {
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": ">= 10",
     "eslint": ">= 7",
     "eslint-config-airbnb": ">= 18",
     "eslint-config-prettier": ">= 4",
@@ -40,7 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.14.2",
-    "eslint-plugin-react-hooks": "^1.4.0",
+    "eslint-plugin-react-hooks": ">= 4",
     "prettier": ">= 2"
   }
 }
