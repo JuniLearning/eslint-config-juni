@@ -24,7 +24,7 @@ module.exports = {
 
 4. (optional) Enable format on save capabilities in VSCode using the Juni linting config. 
 Add the following to `./.vscode/settings.json`:
-```
+```json
   // enables VSCode's default formatter
   "editor.formatOnSave": true,
   // disables the default formatter for all Javascript files. This will be handled by the Juni eslint config.
