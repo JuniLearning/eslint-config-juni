@@ -17,9 +17,9 @@ np --no-tests
 2. Install peer dependencies: `npx install-peerdeps --dev eslint-config-juni`
 3. Create a file called `.eslintrc.js` in the project root, next to `package.json`:
 ```
-{
-  "extends": ["juni"]
-}
+module.exports = {
+  extends: ['juni'],
+};
 ```
 
 Alternatively, you can add the `eslintConfig` key to `package.json` like so:
