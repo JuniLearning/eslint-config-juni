@@ -16,17 +16,10 @@ np --no-tests
 1. `npm i --save-dev eslint-config-juni`
 2. Install peer dependencies: `npx install-peerdeps --dev eslint-config-juni`
 3. Create a file called `.eslintrc.js` in the project root, next to `package.json`:
-```json
-{
-  "extends": ["juni"]
-}
 ```
-
-Alternatively, you can add the `eslintConfig` key to `package.json` like so:
-```json
-"eslintConfig": {
-  "extends": ["juni"]
-}
+module.exports = {
+  extends: ['juni'],
+};
 ```
 
 4. (optional) Enable format on save capabilities in VSCode using the Juni linting config. 
