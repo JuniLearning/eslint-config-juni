@@ -22,13 +22,6 @@ np --no-tests
 }
 ```
 
-Alternatively, you can add the `eslintConfig` key to `package.json` like so:
-```
-"eslintConfig": {
-  "extends": ["juni"]
-}
-```
-
 4. (optional) Enable format on save capabilities in VSCode using the Juni linting config. 
 Add the following to `./.vscode/settings.json`:
 ```
