@@ -1,4 +1,4 @@
-# juni-eslint-config
+# eslint-config-juni
 NPM package for shared ESLint config used at JuniLearning.
 
 
