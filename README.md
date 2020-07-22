@@ -16,14 +16,14 @@ np --no-tests
 1. `npm i --save-dev eslint-config-juni`
 2. Install peer dependencies: `npx install-peerdeps --dev eslint-config-juni`
 3. Create a file called `.eslintrc.js` in the project root, next to `package.json`:
-```
+```json
 {
   "extends": ["juni"]
 }
 ```
 
 Alternatively, you can add the `eslintConfig` key to `package.json` like so:
-```
+```json
 "eslintConfig": {
   "extends": ["juni"]
 }
@@ -31,7 +31,7 @@ Alternatively, you can add the `eslintConfig` key to `package.json` like so:
 
 4. (optional) Enable format on save capabilities in VSCode using the Juni linting config. 
 Add the following to `./.vscode/settings.json`:
-```
+```json
   // enables VSCode's default formatter
   "editor.formatOnSave": true,
   // disables the default formatter for all Javascript files. This will be handled by the Juni eslint config.
