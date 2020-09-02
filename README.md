@@ -1,29 +1,32 @@
 # eslint-config-juni
+
 NPM package for shared ESLint config used at JuniLearning.
 
-
-# How to publish
-```bash
-# run only once to install publishing tool
-npm i np -g 
-```
-
-```bash
-np --no-tests
-```
-
 ## Usage
+
 1. `npm i --save-dev eslint-config-juni`
 2. Install peer dependencies: `npx install-peerdeps --dev eslint-config-juni`
-3. Create a file called `.eslintrc.js` in the project root, next to `package.json`:
+3. Available config options at the moment are 'base' and 'react'. If you include 'react' in your project, it will also include 'base,' but not vice-versa. Include them accordingly based on the environment of your project.
+4. Create a file called `.eslintrc.js` in the project root, next to `package.json`:
+   For non-React projects:
+
 ```js
 module.exports = {
-  extends: ['juni'],
+  extends: ["juni/base"],
 };
 ```
 
-4. (optional) Enable format on save capabilities in VSCode using the Juni linting config. 
-Add the following to `./.vscode/settings.json`:
+For React projects:
+
+```js
+module.exports = {
+  extends: ["juni/react"],
+};
+```
+
+5. (optional) Enable format on save capabilities in VSCode using the Juni linting config.
+   Add the following to `./.vscode/settings.json`:
+
 ```json
   // enables VSCode's default formatter
   "editor.formatOnSave": true,
@@ -43,4 +46,15 @@ Add the following to `./.vscode/settings.json`:
     "javascriptreact"
   ],
   "eslint.alwaysShowStatus": true
+```
+
+# How to publish
+
+```bash
+# run only once to install publishing tool
+npm i np -g
+```
+
+```bash
+np --no-tests
 ```
