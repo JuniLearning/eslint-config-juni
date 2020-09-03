@@ -1,37 +1,36 @@
 module.exports = {
   rules: {
+    // disallows debugger statements
     'no-debugger': 0,
+    // disallow use of window.alert()
     'no-alert': 0,
+    // disallows use of await in loops
     'no-await-in-loop': 0,
-    'no-return-assign': ['error', 'except-parens'],
+    // disallows assignment in a return statement, e.g. return foo = bar + 2;
+    'no-return-assign': ['error'],
+    // restricts the use of various...unsavory... JavaScript features. Takes an array of ESTree node types.
     'no-restricted-syntax': [
       2,
       'ForInStatement',
       'LabeledStatement',
       'WithStatement',
     ],
+    // every variable should be used, exported, or returned
     'no-unused-vars': [
       'error',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: false,
-      },
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
     ],
-    'prefer-const': [
-      'error',
-      {
-        destructuring: 'all',
-      },
-    ],
+    // use const where possible, rather than let or var
+    // prettier-ignore
+    'prefer-const': [ 'error', { destructuring: 'all' } ],
+    // enforces braces in an arrow function body where possible, but able to omit if not needed
     'arrow-body-style': [2, 'as-needed'],
-    'no-unused-expressions': [
-      2,
-      {
-        allowTaggedTemplates: true,
-      },
-    ],
+    // every expression should be used or returned within the scope
+    // prettier-ignore
+    'no-unused-expressions': [ 2, { allowTaggedTemplates: true } ],
+    // disallows changing the value of a parameter.
     'no-param-reassign': [2, { props: false }],
+    // disables console. methods
     'no-console': 0,
   },
 };
