@@ -4,28 +4,36 @@ NPM package for shared ESLint config used at JuniLearning.
 
 ## Usage
 
+### For all projects:
+
 1. `npm i --save-dev eslint-config-juni`
 2. Install peer dependencies: `npx install-peerdeps --dev eslint-config-juni`
-3. Available config options at the moment are 'base' and 'react'. If you include 'react' in your project, it will also include 'base,' but not vice-versa. Include them accordingly based on the environment of your project.
-4. Create a file called `.eslintrc.js` in the project root, next to `package.json`:
-   For non-React projects:
+3. Create a file called `.eslintrc.js` in the project root, next to `package.json`. Leave it empty for now. The contents will vary depending on the repo's environment type.
+
+### `.eslintrc.js` contents:
+
+_React projects:_
 
 ```js
 module.exports = {
-  extends: ["juni/base"],
+  extends: ["juni/packages/base", "juni/packages/react"],
 };
 ```
 
-For React projects:
+_Non-React projects_
 
 ```js
 module.exports = {
-  extends: ["juni/react"],
+  extends: ["juni/packages/base"],
 };
 ```
 
-5. (optional) Enable format on save capabilities in VSCode using the Juni linting config.
-   Add the following to `./.vscode/settings.json`:
+(more configs coming soon)
+
+## VSCode setup
+
+Enable format on save capabilities in VSCode using the Juni linting config.
+Add the following to `./.vscode/settings.json`:
 
 ```json
   // enables VSCode's default formatter
