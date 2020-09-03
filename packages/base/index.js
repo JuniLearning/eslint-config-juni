@@ -1,10 +1,10 @@
 module.exports = {
   extends: [
-    'airbnb',
-    'prettier',
+    '../../node_modules/eslint-config-airbnb-base',
+    '../../node_modules/eslint-config-prettier',
     './rules/best-practices',
     './rules/styles',
-    './rules/prettier.js'
+    './rules/prettier.js',
   ].map(require.resolve),
   env: {
     browser: true,
@@ -21,5 +21,5 @@ module.exports = {
     },
   },
   rules: {},
-  plugins: ['prettier', 'react-hooks'],
-}
+  plugins: ['prettier'],
+};

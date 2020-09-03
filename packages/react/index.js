@@ -1,9 +1,10 @@
 module.exports = {
   extends: [
-    'airbnb',
-    'prettier',
-    'prettier/react',
+    '../../node_modules/eslint-config-airbnb',
+    '../../node_modules/eslint-config-prettier',
+    '../../node_modules/eslint-config-prettier/react',
     './rules/react',
+    './rules/react-hooks',
     './rules/jsx-a11y.js',
   ].map(require.resolve),
   parser: 'babel-eslint',
@@ -15,4 +16,4 @@ module.exports = {
     },
   },
   rules: {},
-}
+};

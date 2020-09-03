@@ -31,7 +31,7 @@ module.exports = {
         allowTaggedTemplates: true,
       },
     ],
-    'no-param-reassign': [ 2, { props: false } ],
+    'no-param-reassign': [2, { props: false }],
     'no-console': 0,
-  }
-}
+  },
+};
