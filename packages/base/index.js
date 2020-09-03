@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    '../../node_modules/eslint-config-airbnb-base',
-    '../../node_modules/eslint-config-prettier',
+    'eslint-config-airbnb-base',
+    'eslint-config-prettier',
     './rules/best-practices',
     './rules/styles',
     './rules/prettier.js',

@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    '../../node_modules/eslint-config-airbnb',
-    '../../node_modules/eslint-config-prettier',
-    '../../node_modules/eslint-config-prettier/react',
+    'eslint-config-airbnb',
+    'eslint-config-prettier',
+    'eslint-config-prettier/react',
     './rules/react',
     './rules/react-hooks',
     './rules/jsx-a11y.js',
