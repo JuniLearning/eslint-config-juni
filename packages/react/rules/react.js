@@ -13,5 +13,9 @@ module.exports = {
     'react/require-default-props': 0,
     // eslint-ignore
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    // Enforces adding prop-types. Added as a warning for backwards compatibility, but encouraged for future use & refactor
+    'react/prop-types': 1,
+    // Enforces destructuring props, and flags usages of directly instantiating, such as foo={props.bar}
+    'react/destructuring-assignment': 0,
   },
 };
