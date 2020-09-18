@@ -1,9 +1,5 @@
 module.exports = {
   rules: {
-    // Enforces using a default export if you only have one export from a file
-    'import/prefer-default-export': 0,
-    // provides standards around importing a file with or without a file extension
-    'import/extensions': 0,
     // Enforces naming an otherwise anonymous function: https://eslint.org/docs/rules/func-names
     'func-names': 0,
     // enforces a space before function parameters, e.g. function foo() {} vs. function foo ()
