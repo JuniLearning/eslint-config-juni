@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['react'],
   rules: {
     // warns if an array index is used as a key
     'react/no-array-index-key': 1,
