@@ -19,7 +19,9 @@ module.exports = {
     'react/destructuring-assignment': 0,
     // Enforces type on buttons, e.g. <button type="submit" />
     'react/button-has-type': 0,
-    // enforces order of lifecycle methods in a React class
+    // Enforces order of lifecycle methods in a React class
     'react/sort-comp': 0,
+    // Allows you to add a list of prop types that will be forbidden
+    'react/forbid-prop-types': 0,
   },
 };
