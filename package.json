@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./test.sh",
-    "publish": "npx np --no-tests",
+    "publish": "npx np --no-tests --any-branch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
