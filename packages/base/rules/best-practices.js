@@ -34,5 +34,7 @@ module.exports = {
     'no-console': 0,
     // enforces a certain number of classes per file, defaults to 1. Enabled due to several files with multiple, smaller React Class components
     'max-classes-per-file': 0,
+    // Throws error if you have multiple levels in a ternary.
+    'no-nested-ternary': 0,
   },
 };

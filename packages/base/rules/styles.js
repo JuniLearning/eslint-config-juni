@@ -12,5 +12,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     // requires return statements to either always, or never, specify values
     'consistent-return': 0,
+    // enforces lines between methods in a class
+    'lines-between-class-members': 0,
   },
 };

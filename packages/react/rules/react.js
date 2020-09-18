@@ -17,5 +17,9 @@ module.exports = {
     'react/prop-types': 1,
     // Enforces destructuring props, and flags usages of directly instantiating, such as foo={props.bar}
     'react/destructuring-assignment': 0,
+    // Enforces type on buttons, e.g. <button type="submit" />
+    'react/button-has-type': 0,
+    // enforces order of lifecycle methods in a React class
+    'react/sort-comp': 0,
   },
 };
