@@ -30,6 +30,27 @@ module.exports = {
 
 (more configs coming soon)
 
+## Lint pre-push & Husky
+Enforce linting config on commits by using the [lint pre-push plugin](https://www.npmjs.com/package/lint-prepush). This lints all committed files when a user attempts to push their code and will block the push if there are any linting errors.
+
+1. Install the packages: `npm install --save-dev lint-prepush && husky` 
+2. Add the following to `package.json`:
+```json
+  "husky": {
+    "hooks": {
+      "pre-push": "lint-prepush"
+    }
+  },
+  "lint-prepush": {
+    "base": "master",
+    "tasks": {
+      "*.js": [
+        "eslint"
+      ]
+    }
+  },
+```
+
 ## VSCode setup
 
 Enable format on save capabilities in VSCode using the Juni linting config.
