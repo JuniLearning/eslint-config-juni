@@ -13,7 +13,7 @@ module.exports = {
     'react/require-default-props': 0,
     // eslint-ignore
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    // Enforces adding prop-types. Added as a warning for backwards compatibility, but encouraged for future use & refactor
+    // Enforces adding prop-types. Disabled for backwards compatibility, but encouraged for future use & refactor
     'react/prop-types': 0,
     // Enforces destructuring props, and flags usages of directly instantiating, such as foo={props.bar}
     'react/destructuring-assignment': 0,
@@ -23,5 +23,14 @@ module.exports = {
     'react/sort-comp': 0,
     // Allows you to add a list of prop types that will be forbidden
     'react/forbid-prop-types': 0,
+    // Enforces that every state variable is used. Disabling for backwards compatibility.
+    'react/no-unused-state': 0,
+    // Makes sure every ref that is passed is a ref object, not a string. Disabled for backwards compatibility.
+    /*
+      <div className="foo" ref="Hello world">
+    */
+    'react/no-string-refs': 0,
+    // Bad: { ...props }. Disabling because this can be a helpful tool to reduce boilerplate.
+    'react/jsx-props-no-spreading': 0,
   },
 };
