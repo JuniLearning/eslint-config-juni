@@ -15,11 +15,6 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
-    // every variable should be used, exported, or returned
-    'no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-    ],
     // use const where possible, rather than let or var
     // prettier-ignore
     'prefer-const': [ 'error', { destructuring: 'all' } ],
@@ -36,5 +31,14 @@ module.exports = {
     'max-classes-per-file': 0,
     // Throws error if you have multiple levels in a ternary.
     'no-nested-ternary': 0,
+    // Disabling the following 3 for backwards compatibility, but they will be added back in asap in favor of the comment below
+    'no-undef': 0,
+    'no-unused-vars': 0,
+    'no-shadow': 0,
+    // every variable should be used, exported, or returned
+    // 'no-unused-vars': [
+    //   'error',
+    //   { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
+    // ],
   },
 };
