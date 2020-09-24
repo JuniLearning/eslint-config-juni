@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['import'],
   rules: {
-    // Enforces using a default export if you only have one export from a file.
+    // Enforces using a default export if you only have one export from a file. Disabled as there is marginal value for high cost to implement, files with multiple exports might not necessitate a default export.
     'import/prefer-default-export': 0,
     // provides standards around importing a file with or without a file extension. Disabled for backwards compatibility.
     'import/extensions': 0,
