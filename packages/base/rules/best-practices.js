@@ -32,7 +32,7 @@ module.exports = {
     'no-param-reassign': [2, { props: false }],
     // disables console. methods
     'no-console': 0,
-    // enforces a certain number of classes per file, defaults to 1. Enabled due to several files with multiple, smaller React Class components
+    // enforces a certain number of classes per file, defaults to 1. Disabled due to several files with multiple, smaller React Class components
     'max-classes-per-file': 0,
     // Throws error if you have multiple levels in a ternary.
     'no-nested-ternary': 0,
