@@ -5,20 +5,12 @@ module.exports = {
     './rules/best-practices',
     './rules/styles',
     './rules/prettier.js',
+    './rules/imports.js',
   ].map(require.resolve),
-  env: {
-    browser: true,
-    node: true,
-    jquery: true,
-    jest: true,
-  },
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2020,
-    ecmaFeatures: {
-      impliedStrict: true,
-      classes: true,
-    },
+    ecmaVersion: 6,
+    sourceType: 'module',
   },
   rules: {},
 };
