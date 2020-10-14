@@ -7,10 +7,12 @@ module.exports = {
     './rules/prettier.js',
     './rules/imports.js',
   ].map(require.resolve),
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
+    requireConfigFile: false,
   },
+  plugins: ['@babel'],
   rules: {},
 };
