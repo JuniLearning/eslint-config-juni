@@ -14,5 +14,7 @@ module.exports = {
     'consistent-return': 0,
     // enforces lines between methods in a class. Disabling for backwards compability && low benefit.
     'lines-between-class-members': 0,
+    // enforces naming variables camelcase. Disabling for flexibility.
+    camelcase: 0,
   },
 };
