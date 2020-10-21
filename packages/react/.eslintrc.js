@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['../base', './index.js'],
+  extends: ['./index.js'],
   rules: {},
 };

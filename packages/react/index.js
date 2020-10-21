@@ -6,7 +6,6 @@ module.exports = {
     './rules/react',
     './rules/react-hooks',
     './rules/jsx-a11y.js',
-    '../base',
   ].map(require.resolve),
   parser: '@babel/eslint-parser',
   parserOptions: {

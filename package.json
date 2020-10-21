@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-juni",
-  "version": "0.0.22",
+  "version": "0.0.36",
   "description": "NPM package for shared ESLint config used at JuniLearning.",
   "main": "index.js",
   "scripts": {
@@ -28,26 +28,26 @@
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.0.0",
     "prettier": "^2.0.5"
   },
   "peerDependencies": {
-    "@babel/core": ">= 7",
-    "@babel/eslint-parser": ">= 7",
-    "@babel/eslint-plugin": ">= 7",
+    "@babel/core": "^7.2.0",
+    "@babel/eslint-parser": "^7.x",
+    "@babel/eslint-plugin": "^7.x",
     "@babel/plugin-proposal-class-properties": ">= 7",
     "@babel/plugin-transform-react-jsx": ">= 7",
-    "eslint": ">= 7",
+    "eslint": ">= 7.2.0",
     "eslint-config-airbnb": ">= 18",
     "eslint-config-prettier": ">= 4",
-    "eslint-plugin-import": ">= 2",
-    "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.x",
     "eslint-plugin-prettier": ">= 3.1.1",
-    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": ">= 4",
     "prettier": ">= 2"
   }
