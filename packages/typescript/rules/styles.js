@@ -9,5 +9,6 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 0,
     'no-unused-expressions': 0,
     '@typescript-eslint/no-unused-expressions': 2,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   },
 };
