@@ -16,5 +16,7 @@ module.exports = {
     'lines-between-class-members': 0,
     // enforces naming variables camelcase. Disabling for flexibility.
     camelcase: 0,
+    // Enforces that ternaries should only go one level deep. disabling for backwards compatibility.
+    'no-nested-ternary': 0,
   },
 };
