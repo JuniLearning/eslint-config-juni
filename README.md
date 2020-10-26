@@ -20,6 +20,30 @@ module.exports = {
 };
 ```
 
+_React-Typescript projects:_
+
+```js
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  extends: [
+    "juni/packages/react",
+    "juni/packages/base",
+    "juni/packages/typescript",
+  ],
+};
+```
+
+_Vanila Typescript (no React) projects:_
+
+```js
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  extends: ["juni/packages/base", "juni/packages/typescript"],
+};
+```
+
 _Non-React projects_
 
 ```js

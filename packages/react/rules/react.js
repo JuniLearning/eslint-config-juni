@@ -33,5 +33,6 @@ module.exports = {
     'react/no-string-refs': 0,
     // Bad: { ...props }. Disabling because this can be a helpful tool to reduce boilerplate.
     'react/jsx-props-no-spreading': 0,
+    'react/jsx-curly-newline': 0,
   },
 };
