@@ -92,6 +92,12 @@ Add the following to `./.vscode/settings.json`:
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
