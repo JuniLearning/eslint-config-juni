@@ -5,9 +5,9 @@ module.exports = {
     'import/prefer-default-export': 0,
     // provides standards around importing a file with or without a file extension. Disabled for backwards compatibility.
     'import/extensions': 0,
-    // todo The following two are disabled for backwards compatibility but should be added back in at a later point.
     // Forbids the import of external modules that are not declared in package.json.
-    'import/no-extraneous-dependencies': 0,
+    'import/no-extraneous-dependencies': 2,
+    // todo The following rule is disabled for backwards compatibility but should be added back in at a later point.
     // ensures an imported module can be resolve to a module on the local filesystem
     'import/no-unresolved': 0,
   },
