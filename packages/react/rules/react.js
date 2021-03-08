@@ -26,6 +26,8 @@ module.exports = {
     'react/forbid-prop-types': 0,
     // Enforces that every state variable is used. Disabling for backwards compatibility.
     'react/no-unused-state': 0,
+    // Enforces state initialization style
+    'react/state-in-constructor': ['error', 'never'],
     // Makes sure every ref that is passed is a ref object, not a string. Disabled for backwards compatibility.
     /*
       <div className="foo" ref="Hello world">
