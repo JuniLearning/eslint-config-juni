@@ -2,7 +2,7 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
-      'error',
+      'warn',
       {
         // If an arrow function has one parameter, don't use parenthesis: e.g. const foo = bar => value; vs. const foo = (bar) => value;
         arrowParens: 'avoid',
