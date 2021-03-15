@@ -119,3 +119,7 @@ npm i np -g
 ```bash
 np --no-tests
 ```
+
+```bash
+npm run release
+```
