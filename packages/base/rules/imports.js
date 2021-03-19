@@ -6,7 +6,10 @@ module.exports = {
     // provides standards around importing a file with or without a file extension. Disabled for backwards compatibility.
     'import/extensions': 0,
     // Forbids the import of external modules that are not declared in package.json.
-    'import/no-extraneous-dependencies': 2,
+    'import/no-extraneous-dependencies': [
+      2,
+      { devDependencies: ['**/*.stories.*', '**/*.test.*'] }, // importing devDependencies is fine in files matching these globs
+    ],
     // todo The following rule is disabled for backwards compatibility but should be added back in at a later point.
     // ensures an imported module can be resolve to a module on the local filesystem
     'import/no-unresolved': 0,
